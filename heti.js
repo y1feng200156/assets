@@ -771,8 +771,10 @@
 
 })));
 
+
 window.onload = function () {
 	document.body.classList = 'heti heti--classic';
+	mermaid.initialize({ startOnLoad: true });
 }
 const heti = new Heti('body');
 heti.autoSpacing();
@@ -784,3 +786,6 @@ script.setAttribute('src', 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-c
 script.setAttribute('id', 'MathJax-script');
 script.setAttribute('async', 'async');
 document.head.appendChild(script);
+var mermaid = document.createElement('script');
+mermaid.src = 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js';
+document.head.addpendChild(mermaid);
